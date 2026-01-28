@@ -32,8 +32,8 @@ packages assume use of GCC.
 
         .. code-block:: bash
 
-            $ module use /usw/conda/modulefiles
-            $ module load conda
+            $ module use /usw/rdhpcs/modulefiles
+            $ module load rdhpcs-conda
 
         .. note::
 
@@ -48,7 +48,7 @@ packages assume use of GCC.
 
         .. code-block:: bash
 
-            $ module load conda
+            $ module load rdhpcs-conda
 
     .. tab-item:: Jet
         :sync: jet
@@ -69,7 +69,7 @@ packages assume use of GCC.
 
         .. code-block:: bash
 
-            $ module load conda
+            $ module load rdhpcs-conda
 
 
 This puts you in the "base" conda environment( and activates it), which is
