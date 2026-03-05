@@ -155,6 +155,22 @@ To start using Python, load the ``python`` module.
 
             $ module load rdhpcs-python
 
+    .. tab-item:: Orion
+        :sync: orion
+
+        .. code-block:: bash
+
+	    $ module load contrib
+            $ module load rdhpcs-python
+
+    .. tab-item:: Hercules
+        :sync: Hercules
+
+        .. code-block:: bash
+
+	    $ module load contrib
+            $ module load rdhpcs-python
+
 Run the ``module avail python`` command to see the available versions of
 Python. After loading one of these, you are in a conda environemnt
 associated with that version.
@@ -204,6 +220,22 @@ on these systems, add the module file path to modules, and load the module.
         .. code-block:: bash
 
             $ module load conda
+
+    .. tab-item:: Orion
+        :sync: orion
+
+        .. code-block:: bash
+
+	    $ module load contrib
+            $ module load rdhpcs-conda
+
+    .. tab-item:: Hercules
+        :sync: Hercules
+
+        .. code-block:: bash
+
+	    $ module load contrib
+            $ module load rdhpcs-conda
 
 
 .. _python-python-and-conda-environments:
