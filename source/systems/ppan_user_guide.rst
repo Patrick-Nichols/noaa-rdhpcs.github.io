@@ -1,3 +1,10 @@
+.. meta::
+   :description: User guide for PPAN (Post Processing and Analysis), a cluster
+    at GFDL in Princeton, NJ for analyzing and interpreting models generated
+    on other HPC systems.
+   :keywords: PPAN, post-processing, analysis, GFDL, Princeton, Slurm, archive,
+    petabytes, MATLAB, Python
+
 .. _ppan-user-guide:
 
 ###############
@@ -407,6 +414,19 @@ Gotchas
     auto-generate code  for batch submission outside of FRE. (`Reference
     <https://thoughtbot.com/blog/no-newline-at-end-of-file>`_
 
+Podman
+======
+
+Podman is an open-source utility that can be used on Gaea or PPAN to create and
+manage containers. For more information, see the
+`Podman documentation <https://podman.io/docs>`__.
+
+.. note::
+
+    Before you can use Podman on Gaea or PPAN, you will need to request
+    Podman access through the :ref:`Help System <getting_help>`
+    Send an email to oar.gfdl.help@noaa.gov, and specify Podman access
+    in the subject line.
 
 
 Analysis Software

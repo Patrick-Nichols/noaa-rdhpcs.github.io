@@ -1,3 +1,10 @@
+.. meta::
+   :description: User guide for Mercury, an RDHPCS data transfer and
+    collaboration system supporting Globus, DTNs, and UDTNs for secure
+    data transfer to and from NOAA collaborators.
+   :keywords: Mercury, data transfer, collaboration, DTN, UDTN, Globus,
+    HPSS, AMD EPYC
+
 .. _mercury-user-guide:
 
 ##################
@@ -51,7 +58,7 @@ Data Transfer
 =============
 
 Data transfer instructions can be found on the
-`Transferring Data page <https://docs.rdhpcs.noaa.gov/data/transferring_data.html#transferring-data>`_.
+:ref:`transferring-data` page.
 
 In order to use Mercury for file transfers, user account directories must be in
 place. These directories are automatically created with your first login to a
@@ -126,7 +133,7 @@ HPSS Access
 ===========
 
 HPSS is accessible. See the
-`NESCC HPSS page <https://docs.rdhpcs.noaa.gov/data/nescc_hpss.html>`_
+:ref:`nescc_hpss` page
 for additional information.
 
 Getting Help

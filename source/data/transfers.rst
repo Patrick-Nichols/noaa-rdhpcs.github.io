@@ -1,3 +1,9 @@
+.. meta::
+   :description: Guide to data transfer methods on RDHPCS systems, including
+    Globus, Data Transfer Nodes, Untrusted DTNs, and SSH port tunneling.
+   :keywords: data transfers, Globus, DTN, UDTN, port tunneling, rsync, scp,
+    trusted hosts, firewall
+
 .. _Data_Transfers:
 
 ##############
@@ -733,7 +739,7 @@ SSH Port Tunnel For PuTTY Windows Systems
 
 PuTTY is an SSH client, used to configure and initiate connection.
 Navigate to a separate tab to install `PuTTY
-<http://www.putty.org/>`_. If you cannot install software on your
+<https://www.putty.org/>`_. If you cannot install software on your
 machine, contact your local systems administrator.
 
 **Configuration**

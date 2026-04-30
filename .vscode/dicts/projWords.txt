@@ -144,6 +144,7 @@ fillin
 Finity
 firstlast
 Firstname
+FNRS
 FOIA
 fortl
 fpic
@@ -170,6 +171,7 @@ genvall
 genvlist
 geospace
 getstripe
+gfdluser
 gfsenkf
 gitflow
 globpsd
@@ -429,6 +431,7 @@ nodename
 noder
 nodocs
 nofma
+noindex
 nolisten
 nompi
 NOPASSWD

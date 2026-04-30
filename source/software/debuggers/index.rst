@@ -1,3 +1,9 @@
+.. meta::
+   :description: Guide to using Linaro Forge DDT, a graphical debugger for
+    MPI, OpenMP, CUDA, and multithreaded applications on RDHPCS systems.
+   :keywords: Linaro Forge, DDT, debugger, MPI, OpenMP, CUDA, Fortran, C++,
+    parallel debugging
+
 .. _linaro-forge:
 
 ************************
@@ -89,7 +95,7 @@ In the locally running client:
 There are other ways to start Forge DDT.  We find the remote connection gives
 the best user experience on the RDHPCS systems.  If you decide to run Forge DDT
 directly on the RDHPCS system, you will likely want to use a remote desktop
-environment, like the :ref:`x2go-remote-desktop`.  Please refer to the `Linaro
+environment. Please refer to the `Linaro
 Forge connecting to a remote system
 <https://docs.linaroforge.com/24.0.3/html/forge/forge/connecting_to_a_remote_system/index.html>`_
 documentation for more information.
