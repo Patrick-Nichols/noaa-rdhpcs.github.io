@@ -742,7 +742,7 @@ To transfer a file **from** HPC Systems:
 
 For Windows:
 
-  The procedure is almost the same as copying to the RDHPCS with the exception that you will click on a file on the left and select download.     
+  The procedure is almost the same as copying to the RDHPCS, except that you will click a file on the left and select download.     
 
 For Mac or Linux, enter:
 
