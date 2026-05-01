@@ -655,8 +655,8 @@ configuration:
 .. image:: /images/linux_xfer2.png
    :scale: 75%
 
-If you are unsing Linux, verify that the tunnel is working by doing the following in another local
-window from your local machine:
+If you are unsing Linux, verify that the tunnel is working by doing the
+following. In another local window from your local machine enter the command:
 
 .. code-block:: shell
 
@@ -701,12 +701,13 @@ For Mac or Linux, enter:
 
    Your username is case sensitive when used in the scp command. Username should be in the form of First.Last.
 
-For Windows Power Shell, use `WinSCP <https://winscp.net/eng/index.php>`_ to
+For Windows:
+
+It is recommended to use `WinSCP <https://winscp.net/eng/index.php>`_ to
 transfer the file. First open the app and start a session. The protocal
-should be SFTP, the hostname
-should be localhost, the port should be one for the tunnel as mentioned
-above and the user name will be account name on the RDHPCS system. Leave the
-password blank. Click the login button.
+should be SFTP, the hostname should be localhost, the port should be one
+for the tunnel as mentioned above and the user name will be account name
+on the RDHPCS system. Leave the password blank. Click the login button.
 
 .. image:: /images/winscp1.png
    :scale: 75%
@@ -720,36 +721,37 @@ login.
    :scale: 75%
 
 The next screen will show the interface for transfering files with the local
-directory system on the right and the RDHPCS remote system directory on the left as show below.
+directory system on the right and the RDHPCS remote system directory on the
+left as show below.
 
 .. image:: /images/winscp3.png
    :scale: 75%
 
-To transfer a file, right click on the file and select upload. 
+To transfer a file, right click on the file and select upload.
 
 .. image:: /images/winscp2a.png
    :scale: 75%
 
 The transfer dialog box will pop up. Click OK and wait for the transfer to
-complete. 
+complete.
 
 .. image:: /images/winscp3a.png
    :scale: 75%
 
-You should now see the file now on the left.
+You should now see the file on the left.
 
 To transfer a file **from** HPC Systems:
 
 For Windows:
 
-  The procedure is almost the same as copying to the RDHPCS with the exception that you will click on a file on the left and select download.     
+The procedure is almost the same as copying to the RDHPCS with the exception
+that you will click on a file or files on the left and select download.
 
 For Mac or Linux, enter:
 
 .. code-block:: shell
 
     rsync <put rsync options here> -e 'ssh -l First.Last -p XXXXX' First.Last@localhost:/path/to/files/on/HPCSystems /local/path/to/files
-
 
 You will be asked for a password. Enter your PIN and touch your YubiKey for
 authentication.
