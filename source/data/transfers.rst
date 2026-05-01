@@ -688,23 +688,8 @@ Please keep in mind that tunnel will exist only as long as the session opened
 in Step 1 is kept alive.
 
 
-.. code-block:: shell
-
-  Hostname: localhost
-  Port: your-assigned-port-used-in-Step1-above
-  File protocol: SFTP
-
-
-
-
 To transfer a file **to** HPC Systems
 
-
-For Windows Power Shell, enter:
-
-.. code-block:: shell
-
-  scp -P XXXXX /local/path/to/file First.Last@localhost:/path/to/file/on/HPCSystems
 
 For Mac or Linux, enter:
 
@@ -716,13 +701,44 @@ For Mac or Linux, enter:
 
    Your username is case sensitive when used in the scp command. Username should be in the form of First.Last.
 
+For Windows Power Shell, use 'WinSCP<https://winscp.net/eng/index.php>'_ to
+transfer the file. First open the app and start a session. The protocal
+should be SFTP, the hostname
+should be localhost, the port should be one for the tunnel as mentioned
+above and the user name will be account name on the RDHPCS system. Leave the
+password blank. Click the login button.
+
+.. image:: /images/winscp1.png
+   :scale: 75%
+
+If a dialog box appears requesting to add a host key to the cache, click
+yes and continue. The next screen will ask you for your password. Enter
+your Yubikey Pin and long press to log in as you would normally do for a
+login.
+
+.. image:: /images/winscp2.png
+   :scale: 75%
+
+The next screen will show the interface for transfering files with the local
+system on the right and the RDHPCS remote system on the left as show below.
+
+.. image:: /images/winscp3.png
+   :scale: 75%
+
+To transfer a file, right click on the file and select upload. The transfer dialog box
+will pop up which will disappear when the transfer is complete. 
+
+.. image:: /images/winscp3a.png
+   :scale: 75%
+
+You should now see the file now on the left.
+
 To transfer a file **from** HPC Systems:
 
-For Windows Power Shell, enter:
+For Windows:
 
-.. code-block:: shell
-
-    scp -P XXXXX First.Last@localhost:/path/to/file/on/HPCSystems /local/path/to/file
+  The procedure is almost the same as copying to the RDHPCS with the
+exception that you will click on a file on the left and select download.     
 
 For Mac or Linux, enter:
 
@@ -731,7 +747,7 @@ For Mac or Linux, enter:
     rsync <put rsync options here> -e 'ssh -l First.Last -p XXXXX' First.Last@localhost:/path/to/files/on/HPCSystems /local/path/to/files
 
 
-In either case, you will be asked for a password. Touch your YubiKey for
+You will be asked for a password. Enter your PIN and touch your YubiKey for
 authentication.
 
 SSH Port Tunnel For PuTTY Windows Systems
