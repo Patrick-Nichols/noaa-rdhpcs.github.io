@@ -634,20 +634,20 @@ For Windows Power Shell, enter:
 
 .. code-block:: shell
 
-     ssh -m hmac-sha2-512-etm@openssh.com -LXXXXX:localhost:XXXXX First.Last@ursa-rsa.boulder.rdhpcs.noaa.gov
+     ssh -m hmac-sha2-512-etm@openssh.com -LXXXXX:localhost:XXXXX First.Last@ursa-rsa.fairmont.rdhpcs.noaa.gov
 
 For Mac or Linux, enter:
 
 .. code-block:: shell
 
-     ssh -LXXXX:localhost:XXXXX First.Last@ursa-rsa.boulder.rdhpcs.noaa.gov
+     ssh -LXXXX:localhost:XXXXX First.Last@ursa-rsa.fairmont.rdhpcs.noaa.gov
 
 If you will be running X11 applications with x2go or normal terminals,
 remember to add the -X parameter as follows:
 
 .. code-block:: shell
 
-    ssh -X -LXXXXX:localhost:XXXXX First.Last@ursa-rsa.boulder.rdhpcs.noaa.gov
+    ssh -X -LXXXXX:localhost:XXXXX First.Last@ursa-rsa.fairmont.rdhpcs.noaa.gov
 
 Note that objects emphasized in this figure should be unique to your
 configuration:
@@ -655,7 +655,7 @@ configuration:
 .. image:: /images/linux_xfer2.png
    :scale: 75%
 
-Verify that the tunnel is working by doing the following in another local
+If you are unsing Linux, verify that the tunnel is working by doing the following in another local
 window from your local machine:
 
 .. code-block:: shell
@@ -666,7 +666,7 @@ window from your local machine:
 Note that <port> is your local port number used above, First.Last is
 your user ID on the RDHPCS systems and localhost is typed as-is.
 
-You should be prompted for your password; enter your PIN + RSA token
+You should be prompted for your password; enter your PIN + press your Yubikey
 and you should be able to login. Once you are able to log in, you can
 log out of that session as that was only for testing the tunnel.
 
@@ -701,7 +701,7 @@ For Mac or Linux, enter:
 
    Your username is case sensitive when used in the scp command. Username should be in the form of First.Last.
 
-For Windows Power Shell, use 'WinSCP<https://winscp.net/eng/index.php>'_ to
+For Windows Power Shell, use `WinSCP <https://winscp.net/eng/index.php>`_ to
 transfer the file. First open the app and start a session. The protocal
 should be SFTP, the hostname
 should be localhost, the port should be one for the tunnel as mentioned
@@ -713,20 +713,25 @@ password blank. Click the login button.
 
 If a dialog box appears requesting to add a host key to the cache, click
 yes and continue. The next screen will ask you for your password. Enter
-your Yubikey Pin and long press to log in as you would normally do for a
+your Pin + press your Yubikey to log in as you would normally do for a
 login.
 
 .. image:: /images/winscp2.png
    :scale: 75%
 
 The next screen will show the interface for transfering files with the local
-system on the right and the RDHPCS remote system on the left as show below.
+directory system on the right and the RDHPCS remote system directory on the left as show below.
 
 .. image:: /images/winscp3.png
    :scale: 75%
 
-To transfer a file, right click on the file and select upload. The transfer dialog box
-will pop up which will disappear when the transfer is complete. 
+To transfer a file, right click on the file and select upload. 
+
+.. image:: /images/winscp2a.png
+   :scale: 75%
+
+The transfer dialog box will pop up. Click OK and wait for the transfer to
+complete. 
 
 .. image:: /images/winscp3a.png
    :scale: 75%
@@ -737,8 +742,7 @@ To transfer a file **from** HPC Systems:
 
 For Windows:
 
-  The procedure is almost the same as copying to the RDHPCS with the
-exception that you will click on a file on the left and select download.     
+  The procedure is almost the same as copying to the RDHPCS with the exception that you will click on a file on the left and select download.     
 
 For Mac or Linux, enter:
 
