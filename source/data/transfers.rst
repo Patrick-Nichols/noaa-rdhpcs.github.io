@@ -655,8 +655,8 @@ configuration:
 .. image:: /images/linux_xfer2.png
    :scale: 75%
 
-If you are using Linux, verify that the tunnel is working by doing the following in another local
-window from your local machine:
+If you are using Linux, verify that the tunnel is working by doing
+the following in another local window from your local machine:
 
 .. code-block:: shell
 
